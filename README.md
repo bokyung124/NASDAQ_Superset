@@ -10,7 +10,26 @@
 
 ## 활용 기술
 
+- Python
+- AWS S3, Redshift
+- MySQL
+- Docker
+- Apache Superset
+
+<br>
+
 <img width="828" alt="스크린샷 2023-12-09 오전 10 35 22" src="https://github.com/bokyung124/AWS_Exercise/assets/53086873/b501b67a-401e-47bc-82f1-4dc02106f3e8">
+
+## 전처리 파일
+
+1. yfinance 라이브러리와 크롤링으로 데이터를 수집하고 CSV파일 생성
+    - 나스닥, S&P500 지수, 종목
+
+2. Getting_market_cap.ipynb 파일의 4번 셀에서 `ValueError` 발생
+    - yfinanace를 사용할 때 BRK.B와 BF.B의 시가총액이 경우에 따라 누락되는 경우가 있음
+    - 누락되는 종목이 2개 밖에 없어 에러를 무시하고 직접 인터넷에서 검색해 5번 셀에서 값 입력
+
+3. 물가, 유가, 물가, 금리 등의 경제 지표들은 크롤링을 통해 CSV로 준비
 
 ## 프로젝트 세부 결과
 
